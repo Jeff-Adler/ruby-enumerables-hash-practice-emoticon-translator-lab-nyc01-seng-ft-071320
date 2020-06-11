@@ -29,10 +29,10 @@ end
 def get_english_meaning(filepath,japanese_emoticon)
   # code goes here
   library = load_library(filepath)
-  binding.pry
   emotion = (library.detect do |emotion,description|
       library[emotion][:japanese] == japanese_emoticon
   end)
+  binding.pry
   return emotion
   # library.each do |emotion, description|
   #   if library[emotion][:japanese] == japanese_emoticon
