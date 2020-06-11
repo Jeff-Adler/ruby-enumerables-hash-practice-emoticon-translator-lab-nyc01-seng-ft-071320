@@ -33,5 +33,6 @@ def get_english_meaning(filepath,japanese_emoticon)
     if library[emotion][:japanese] == japanese_emoticon
       emotion.to_s
     end
+    binding.pry
   end
 end
