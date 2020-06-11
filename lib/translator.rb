@@ -29,7 +29,7 @@ end
 def get_english_meaning(filepath,japanese_emoticon)
   # code goes here
   library = load_library(filepath)
-  binding.pry 
+  binding.pry
   variable = library.detect do |emotion,description|
       library[emotion][:japanese] == japanese_emoticon
     end
