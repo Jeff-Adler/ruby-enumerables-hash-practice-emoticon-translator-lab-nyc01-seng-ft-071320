@@ -36,7 +36,7 @@ def get_english_meaning(filepath,japanese_emoticon)
   emoticon = ""
    library.each do |emotion, description|
      if library[emotion][:japanese] == japanese_emoticon
-       emoticon = emotion.to_s
+       emoticon = emotion
      end
    end
    emotion
