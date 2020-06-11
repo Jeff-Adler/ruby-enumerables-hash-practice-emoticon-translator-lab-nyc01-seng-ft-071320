@@ -39,4 +39,5 @@ def get_english_meaning(filepath,japanese_emoticon)
        emoticon = emotion.to_s
      end
    end
+   emotion
 end
