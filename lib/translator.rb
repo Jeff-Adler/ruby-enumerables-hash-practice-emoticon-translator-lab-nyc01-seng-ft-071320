@@ -29,13 +29,14 @@ end
 def get_english_meaning(filepath,japanese_emoticon)
   # code goes here
   library = load_library(filepath)
-  emotion = (library.detect do |emotion,description|
-      library[emotion][:japanese] == japanese_emoticon
-  end)
-  emotion_string = emotion[0]
-  # library.each do |emotion, description|
-  #   if library[emotion][:japanese] == japanese_emoticon
-  #     return emotion.to_s
-  #   end
-  # end
+  # emotion = (library.detect do |emotion,description|
+  #     library[emotion][:japanese] == japanese_emoticon
+  # end)
+  # emotion_string = emotion[0]
+  emoticon = ""
+   library.each do |emotion, description|
+     if library[emotion][:japanese] == japanese_emoticon
+       emoticon = emotion.to_s
+     end
+   end
 end
